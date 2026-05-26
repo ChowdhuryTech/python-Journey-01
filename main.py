@@ -1,12 +1,12 @@
-# Build Age calculator.
+secret_number = 7
+guess_count = 0
+guess_limit = 3
+while guess_count < guess_limit:
+    guess = int(input('Guess: '))
+    guess_count += 1
+    if guess == secret_number:
+        print('You won!')
+        break
+else:
+    print('You lost!')
 
-Birth_year = int(input("Enter your birth year: "))
-Current_Age = 2026 - Birth_year
-print("Your current age is: ", Current_Age)
-
-# Take input from the user and show them the output with modify message.
-Name = input("Enter your name: ")
-favorite_color = input("Enter your favorite color: ")
-print("You are " + str(Current_Age) + " years old.")
-
-print("Hello, " + Name + "! Your favorite color is " + favorite_color + ".")
